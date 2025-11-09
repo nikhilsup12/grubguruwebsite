@@ -24,24 +24,26 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      box-sizing: border-box;
     }
     .logo {
       font-weight: bold;
       font-size: 1.2em;
     }
     .menu-toggle {
-      font-size: 1.2em;   /* smaller for iPhone */
+      font-size: 1.1em;   /* smaller for iPhone */
       cursor: pointer;
       display: block;
       color: white;
-      padding: 6px 10px;  /* extra padding so it doesn’t get cut off */
+      padding: 6px 12px;
+      margin-right: 8px;  /* spacing from screen edge */
     }
     nav {
       display: none;
       flex-direction: column;
       background-color: #046c4e;
       position: absolute;
-      top: 50px;
+      top: 55px;
       right: 15px;
       border-radius: 6px;
       width: 150px;
@@ -57,9 +59,9 @@
       background-color: #03523b;
     }
     section {
-      padding: 50px 20px 35px;
-      max-width: 700px;
-      margin: 20px auto;
+      padding: 40px 20px 30px; /* reduced top padding */
+      max-width: 650px;        /* narrower box */
+      margin: 90px auto 20px;  /* push content below fixed header */
       background-color: #ffffff;
       border: 1px solid #e0e0e0;
       border-radius: 12px;
@@ -68,21 +70,21 @@
     h2 {
       color: #046c4e;
       text-align: center;
-      margin-top: 5px;
+      margin-top: 0;           /* raise heading */
       margin-bottom: 15px;
     }
     .hero {
       text-align: center;
-      padding: 70px 20px 35px;
+      padding: 80px 20px 35px; /* reduced top padding */
       background-color: #e6f2ef;
       border-radius: 12px;
-      max-width: 700px;
-      margin: 20px auto;
+      max-width: 650px;
+      margin: 90px auto 20px;  /* push hero below header */
     }
     .hero h1 {
       font-size: 1.8em;
       color: #046c4e;
-      margin-top: 5px;
+      margin-top: 0;
       margin-bottom: 15px;
     }
     .hero p {
