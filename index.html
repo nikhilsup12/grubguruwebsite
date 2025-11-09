@@ -30,11 +30,11 @@
       font-size: 1.2em;
     }
     .menu-toggle {
-      font-size: 1.4em;
+      font-size: 1.2em;   /* smaller for iPhone */
       cursor: pointer;
       display: block;
       color: white;
-      padding: 4px;
+      padding: 6px 10px;  /* extra padding so it doesn’t get cut off */
     }
     nav {
       display: none;
@@ -57,8 +57,8 @@
       background-color: #03523b;
     }
     section {
-      padding: 50px 20px 35px; /* reduced top padding */
-      max-width: 700px;        /* narrower box */
+      padding: 50px 20px 35px;
+      max-width: 700px;
       margin: 20px auto;
       background-color: #ffffff;
       border: 1px solid #e0e0e0;
@@ -68,21 +68,21 @@
     h2 {
       color: #046c4e;
       text-align: center;
-      margin-top: 5px;         /* raise heading closer to top */
+      margin-top: 5px;
       margin-bottom: 15px;
     }
     .hero {
       text-align: center;
-      padding: 70px 20px 35px; /* reduced top padding */
+      padding: 70px 20px 35px;
       background-color: #e6f2ef;
       border-radius: 12px;
       max-width: 700px;
       margin: 20px auto;
     }
     .hero h1 {
-      font-size: 2em;
+      font-size: 1.8em;
       color: #046c4e;
-      margin-top: 5px;         /* raise heading */
+      margin-top: 5px;
       margin-bottom: 15px;
     }
     .hero p {
@@ -91,9 +91,10 @@
       margin: auto;
     }
     .feature-image {
-      width: 100%;
+      width: 50%;              /* reduced to 50% size */
       border-radius: 12px;
-      margin-top: 15px;
+      margin: 15px auto;
+      display: block;          /* center the image */
       border: 1px solid #ffffff;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
